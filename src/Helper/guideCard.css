@@ -1,0 +1,15 @@
+.guideCardBtn{
+background-color: black;
+color: white;
+margin-left: 50px;
+border-radius: 10px;
+}
+.guideCardBtn:hover{
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+}
+.navlinkCard{
+  color: black;
+ text-decoration: none;
+ margin-left: 30px;
+}
