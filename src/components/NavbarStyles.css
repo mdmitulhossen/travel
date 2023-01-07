@@ -50,9 +50,7 @@
     transition: all 0.2s ease-in-out;
 }
 
-.nav-links-mobile{
-    /* display: none; */
-}
+
 
 button{
     padding: 0.5rem 1rem;

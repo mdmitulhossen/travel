@@ -2,7 +2,7 @@ import "./loginStyle.css"
 import { useState } from 'react';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Firebase/Firebase";
-import { queryAllByAttribute } from "@testing-library/react";
+
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
@@ -24,8 +24,7 @@ export default function Login() {
           // ...
         })
         .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
+          
         });
     }
   return (
@@ -63,13 +62,13 @@ export default function Login() {
                 <br/>
                 <input type="checkbox" name="check" id="check"/>
                 <span className="rm-me">Remember Me</span>
-                <a href="#" className="fg-pa">Forgot Password?</a>
+                <a href="/forgate" className="fg-pa">Forgot Password?</a>
                 <br/>
                 <button type="submit" className="btn" onClick={handleSignIn}>Log in</button>
             </div>
             <div className="terms">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
+                <a href="privacey">Privacy Policy</a>
+                <a href="terms">Terms & Conditions</a>
             </div>
         </div> 
     </div>
